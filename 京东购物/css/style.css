@@ -1,0 +1,78 @@
+body,ul,li{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 2500px;
+    font: 12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+}
+div{
+    display: block;
+}
+.shortcut_btn{
+    position: relative;
+}
+#shortcut{
+    border-bottom: 1px solid #ddd;
+    background-color: #e3e4e5;
+}
+#shortcut .w{
+    margin: 0 77.5px;
+    width: 990px;
+    height: 30px;
+    line-height: 30px;
+    color: #999;
+}
+#shortcut .fl{
+    float: left;
+    width: 258px;
+}
+#ttbar-mycity{
+    margin-left: 200px;
+}
+#shortcut .cw-icon{
+    height: 28px;
+    line-height: 28px;
+}
+#shortcut .dt{
+    width: 42px;
+    height: 28px;
+    padding: 0 7px;
+    border: 1px solid #e3e4e5;
+}
+#shortcut .iconfont{
+    font-size: 14px;
+    color: #f10215;
+    margin-right: 4px;
+}
+
+.fr{
+    
+}
+#shortcut .w .fr{
+    float: right;
+}
+#ttbar-login.dropdown{
+    width: 105px;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-align: left;
+}
+
+#shortcut li.spacer{
+    overflow: hidden;
+    margin: 11px 5px 0;
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+}
+.style-red{
+    color: #f10215;
+}

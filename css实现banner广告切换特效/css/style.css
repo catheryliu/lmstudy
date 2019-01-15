@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+.wrapper{
+    position: relative;
+    width: 948px;
+    height: 260px;
+    border: 3px solid #000;
+    margin: 100px auto;
+}
+input{
+    display: none;
+}
+.bg-box{
+    width: 100%;
+    height: 100%;
+}
+.bg-box img{
+    display: none;
+    width: 948px;
+    height: 260px;
+}
+.list{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 260px;
+    height: 260px;
+    background:rgba(0, 0, 0, 0.3);
+}
+label{
+    display: inline-block;
+    width: 260px;
+    height: 65px;
+}
+.icon{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.icon img{
+    width: 45px;
+    height: 45px;
+}
+.item{
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    vertical-align: middle;
+}
+#btn1:checked ~ .bg-box img:nth-of-type(1),
+#btn2:checked ~ .bg-box img:nth-of-type(2),
+#btn3:checked ~ .bg-box img:nth-of-type(3),
+#btn4:checked ~ .bg-box img:nth-of-type(4){
+    display: block;
+}
+
+#btn1:checked ~ .list label:nth-of-type(1),
+#btn2:checked ~ .list label:nth-of-type(2),
+#btn3:checked ~ .list label:nth-of-type(3),
+#btn4:checked ~ .list label:nth-of-type(4){
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8),transparent);
+}

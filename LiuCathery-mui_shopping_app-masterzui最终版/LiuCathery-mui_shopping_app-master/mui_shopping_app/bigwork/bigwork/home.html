@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<link rel="stylesheet" type="text/css" href="css/icons-extra.css">
+		<!--自定义iconfont-->
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+		<!--自定义css-->
+		<link rel="stylesheet" type="text/css" href="css/home-css.css">
+		
+	</head>
+
+	<body style="background: #fff;">
+		<header class="mui-bar mui-bar-nav seach-header">
+			<div class="top-sch-box flex-col">
+				<a href="examples/search.html">
+		            <div class="centerflex">
+		                <i class="fdj  icon  iconfont icon-sousuo1" style="color: #0055Ab;"></i>
+		                <div class="sch-txt">毕业季 2件8折</div>
+		                <span class="shaomiao"><i class="iconfont icon-saoma"></i></span>
+		            </div>
+		        </a>
+	        </div>
+	        <a class="btn" href="message.html">
+	            <span class="icon iconfont icon-xiaoxi"></span>
+	        </a>
+	        <!--<a class="btn" href="examples/new-shopping-card.html">
+	            <span class="icon iconfont icon-gouwuche1"></span>
+	        </a>-->
+		</header>
+		<div class="nav-bottom">
+			<!--图片轮播-->
+			<div id="slider" class="mui-slider" >
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="images/lunbo1.jpg"style="width: 375px;height: 262px;"></a></div>
+					<div class="mui-slider-item"><a href="#"><img src="images/lunbo1.jpg"style="width: 375px;height: 262px;"></a></div>
+					<div class="mui-slider-item"><a href="#"><img src="images/lunbo2.jpg" style="width: 375px;height: 262px;"></a></div>
+					<div class="mui-slider-item"><a href="#"><img src="images/lunbo4.jpg"style="width: 375px;height: 262px;"></a></div>
+					<div class="mui-slider-item"><a href="#"><img src="images/lunbo3.jpg" style="width: 375px;height: 262px;"></a></div>
+					<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="images/lunbo1.jpg"></a></div>
+				</div>
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+			<!--商品分类-->
+			<div class="mui-content new-pattern-con">
+		        <ul class="mui-table-view mui-grid-view mui-grid-12 pattern-con-icon">
+		            <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3"><a href="hot-commodity.html">
+		                    <span class="mui-icon-extra mui-icon-extra-heart-filled" style="font-size: 2rem;"></span>
+		                    <div class="mui-media-body">半身百褶</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3"><a href="hot-commodity1.html">
+		                    <span class="mui-icon-extra mui-icon-extra-new" style="font-size: 2rem;"></span>
+		                    <div class="mui-media-body">实用包包</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3"><a href="hot-commodity2.html">
+		                    <span class="icon iconfont icon-yushou-huang" style="font-size: 2rem;"></span>
+		                    <div class="mui-media-body">联名预售</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" ><a href="hot-commodity3.html">
+		                    <span class="mui-icon-extra mui-icon-extra-gift" style="color: #f77877;font-size: 2rem;"></span>
+		                    <div class="mui-media-body">新款T恤</div></a></li>
+		 
+		        </ul> 
+			</div>
+			<!--新款发售-->
+			<div class="new-pattern">
+				<img class="w100" class="home-imgtit" src="images/hometit1.jpg" alt="" />
+				<ul class="pattern-list">
+					<li class="mui-card-footer">
+						<div class="mui-card">
+							<a href="commodity-details.html">
+								<div class="mui-card-header mui-card-media" ><img class="w100" src="images/bags1.jpg" /></div>
+								<div class="mui-card-content">
+									<div class="mui-card-content-inner">
+										<p style="color: #333;">F. R. 北极狐户外轻便双肩包</p>
+									</div>
+								</div>
+								<div class="pattern-list__p">
+									<p class="font-color-pink">￥<label>499</label></p>
+									<p>库存<label>53</label></p>
+								</div>
+							</a>
+						</div>
+						<div class="mui-card">
+							<a href="commodity-details1.html">
+								<div class="mui-card-header mui-card-media" ><img class="w100" src="images/shoes1.jpg"/></div>
+								<div class="mui-card-content">
+									<div class="mui-card-content-inner">
+										<p style="color: #333;">PUMA 男女同款休闲鞋</p>
+									</div>
+								</div>
+								<div class="pattern-list__p">
+									<p class="font-color-pink">￥<label>939</label></p>
+									<p>库存:<label>100</label></p>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="mui-card-footer">
+						<div class="mui-card">
+							<a href="commodity-details3.html">
+								<div class="mui-card-header mui-card-media" ><img class="w100" src="images/skirts1.jpg" /></div>
+								<div class="mui-card-content">
+									<div class="mui-card-content-inner">
+										<p style="color: #333;">Juun.J 条纹拼接半身裙</p>
+									</div>
+								</div>
+								<div class="pattern-list__p">
+									<p class="font-color-pink">￥<label>2629</label></p>
+									<p>库存:<label>53</label></p>
+								</div>
+							</a>
+						</div>
+						<div class="mui-card">
+							<a href="commodity-details2.html">
+								<div class="mui-card-header mui-card-media" ><img class="w100" src="images/T-xu1.jpg" /></div>
+								<div class="mui-card-content">
+									<div class="mui-card-content-inner">
+										<p style="color: #333;">MARCELO BURLON 撞色双翼印花T恤 </p>
+									</div>
+								</div>
+								<div class="pattern-list__p">
+									<p class="font-color-pink">￥<label>1789</label></p>
+									<p>库存:<label>52</label></p>
+								</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="nav-footer">
+			<a class="icon-active" href="">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a href="classification.html">
+				<span class="mui-icon mui-icon-list"></span>
+				<span class="mui-tab-label">分类</span>
+			</a>
+			<a href="shopping.html">
+				<span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
+				<span class="mui-tab-label">购物车</span>
+			</a>
+			<a href="personal.html">
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">个人中心</span>
+			</a>
+		</div>
+		
+		<script src="js/mui.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			  mui.init({
+                swipeBack:true 
+            });
+            var slider = mui("#slider");
+                    slider.slider({
+                        interval: 2000//自动轮播周期，若为0则不自动播放，默认为0；
+                    });
+		</script>
+	</body>
+
+</html>

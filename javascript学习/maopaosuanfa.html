@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+            width: 50px;
+            text-align: center;
+            position: absolute;
+        }
+        .left{
+            background: greenyellow;
+        }
+        .right{
+            background: yellow;
+        }
+        .finish{
+            background: gold;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+
+    <script>
+        var box = document.getElementsByTagName("body")[0];
+
+        var ary = [14,12];
+        //数据 ->后面 随机
+        // var num = parseInt(Math.random()*8)+5;
+        // for(var i = 0;i < num;i++){
+        //     ary[i] = parseInt(Math.random()*80)+10;
+        // }
+
+        //创建div
+        var divAry = [];
+        for(var i = 0;i < ary.length;i++){
+            divAry[i] = document.createElement("div");
+            divAry[i].textContent = ary[i].toString();
+            divAry[i].style.height = ary[i]*5 + "px";
+            divAry[i].style.left = i * 60 + "px";
+            box.appendChild(divAry[i]);
+        }
+        window.onload = function(){
+            oneStep();
+        }
+        //比较两个节点元素 并交换
+
+        var stepID = 0;
+        function oneStep(){
+            var divLeft = divAry[stepID];
+            var divRight = divAry[stepID + 1];//数据的长度
+            divLeft.className = "left";
+            divRight.className = "right";
+
+            var leftValue = parseInt(divLeft.textContent);
+            var rightValue = parseInt(divRight.textContent);
+
+            if(leftValue > rightValue){
+                //交换
+                var tempLeft = divLeft.offsetLeft;
+                var tempRight = divRight.offsetLeft;
+                var endLeft = divRight.offsetLeft;
+                var endRight = divLeft.offsetLeft;
+
+                var tempLoop = setInterval(function(){
+                    if(tempLeft < endLeft){
+                        divLeft.style.left = tempLeft++ + "px";
+                    }
+                    if(tempRight > endRight){
+                        divRight.style.left = tempRight-- + "px";
+                    }
+                    //结束条件
+                    if(tempLeft >= endLeft && tempRight <= endRight){
+                        clearInterval(tempLoop);
+                        divAry[stepID] = divRight;
+                        divAry[stepID + 1] = divLeft;
+                        setTimeout(nextStep,1000);
+                    }
+                },20)
+            }else{
+                //不交换 移动到下一个
+                setTimeout(nextStep,1500);
+            }
+        }
+
+
+        //下一步
+        var maxLength = ary.length - 1;
+        function nextStep(){
+            //把上次的颜色清理掉 启动下一次
+            var divLeft = divAry[stepID];
+            var divRight = divAry[stepID + 1];//数据的长度
+            divLeft.className = "";
+            divRight.className = "";
+
+            stepID++;//大
+
+            if(stepID < maxLength){
+                oneStep();
+            }else if(maxLength > 0){
+                divAry[maxLength].className = "finish";
+                maxLength--;
+                stepID = 0;
+                oneStep();
+            }else{
+                console.log("第一步");
+            }
+
+        }
+    </script>
+</body>
+</html>
